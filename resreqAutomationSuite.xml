@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite1" verbose="1">
+    <listeners>
+        <listener class-name="com.reqres.Utils.TestListeners"/>
+        <listener class-name="com.reqres.Utils.AnnotationTransformer"/>
+    </listeners>
+    <test name="resreqAutomationSuite">
+        <classes>
+            <class name="com.reqres.AutomationSuite.validateGetUserApis"/>
+            <class name="com.reqres.AutomationSuite.validateCreateUserApis"/>
+            <class name="com.reqres.AutomationSuite.validateRegisterUserApis"/>
+            <class name="com.reqres.AutomationSuite.validateUpdateUserApis"/>
+            <class name="com.reqres.AutomationSuite.validateDeleteApis"/>
+        </classes>
+    </test>
+</suite>
